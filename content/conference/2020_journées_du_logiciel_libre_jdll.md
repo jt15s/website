@@ -30,4 +30,4 @@ France
 
 ## Event report:
 
-TODO
+<strong>The event was cancelled at the last minute due to a worldwide pandemic.</strong>

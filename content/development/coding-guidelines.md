@@ -58,8 +58,8 @@ private:
 		const char*				fPointerMember;
 };
 
-// The ':' always comes on its own line, initializers following
 
+// The ':' always comes on its own line, initializers following
 Foo::Foo(int32 param)
 	:
 	Bar(int32* param),
@@ -69,6 +69,7 @@ Foo::Foo(int32 param)
 	...
 }
 
+
 /*! Function descriptions are using doxygen style. Please note, this is not
 	a place for end-user documentation, but for documentation that helps
 	understanding the code, and using the functions correctly.
@@ -77,6 +78,20 @@ template const T*
 Foo::Bar(const char* bar1, T bar2)
 {
 	...
+}
+
+
+// Empty functions in class definitions can be written on a single line
+class Example
+{
+		void			FooFunction() {}
+};
+
+
+// Empty functions defined outside a class must be formatted the same as other functions
+void
+Foo::FooFunction()
+{
 }
 ```
 
@@ -179,7 +194,7 @@ switch (condition) {
 
 ### Misc. formatting
 
-*   Put exactly two blank lines between functions.
+*   Put exactly two blank lines between functions, as well as between includes and defines blocks, and between defines and variable or function definitions.
 *   Include a newline at every file end.
 
 ### Identifiers
